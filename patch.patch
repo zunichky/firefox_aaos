@@ -31,15 +31,6 @@ diff --git a/mobile/android/fenix/app/src/main/AndroidManifest.xml b/mobile/andr
 index 63398b2c715a6..2892eb36224f0 100644
 --- a/mobile/android/fenix/app/src/main/AndroidManifest.xml
 +++ b/mobile/android/fenix/app/src/main/AndroidManifest.xml
-@@ -26,7 +26,7 @@
-         android:required="false" />
-     <uses-feature
-         android:name="android.hardware.camera.autofocus"
--        android:required="false" />
-+        android:required="true" />
- 
-     <uses-permission android:name="android.permission.RECORD_AUDIO" />
-     <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
 @@ -90,6 +90,7 @@
              <meta-data
                  android:name="android.app.shortcuts"
@@ -84,7 +75,7 @@ index 63398b2c715a6..2892eb36224f0 100644
          <meta-data
              android:name="firebase_analytics_collection_deactivated"
              android:value="true" />
-+        <meta-data android:name="distractionOptimized" android:value="true"/>       
++        <meta-data android:name="distractionOptimized" android:value="true"/>
          <!-- Removes the default Workmanager  initialization so that we can use on-demand initializer. -->
          <provider
              android:name="androidx.startup.InitializationProvider"
